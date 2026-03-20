@@ -166,7 +166,7 @@ export default function Contact() {
                   <input
                     type="text"
                     required
-                    className="w-full bg-rose-50/40 border border-rose-100 rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
+                    className="w-full bg-[#190d1d]/65 border border-white/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/50 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition-all"
                     placeholder="Your name"
                   />
                 </div>
@@ -175,7 +175,7 @@ export default function Contact() {
                   <input
                     type="email"
                     required
-                    className="w-full bg-rose-50/40 border border-rose-100 rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
+                    className="w-full bg-[#190d1d]/65 border border-white/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/50 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition-all"
                     placeholder="you@email.com"
                   />
                 </div>
@@ -186,7 +186,7 @@ export default function Contact() {
                   <label className="text-xs font-bold uppercase tracking-widest text-foreground/70">Phone Number</label>
                   <input
                     type="tel"
-                    className="w-full bg-rose-50/40 border border-rose-100 rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
+                    className="w-full bg-[#190d1d]/65 border border-white/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/50 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition-all"
                     placeholder="+91 XXXXX XXXXX"
                   />
                 </div>
@@ -195,7 +195,7 @@ export default function Contact() {
                   <input
                     type="date"
                     required
-                    className="w-full bg-rose-50/40 border border-rose-100 rounded-xl px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
+                    className="w-full bg-[#190d1d]/65 border border-white/20 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition-all"
                   />
                 </div>
               </div>
@@ -205,7 +205,7 @@ export default function Contact() {
                 <select
                   required
                   defaultValue=""
-                  className="w-full bg-rose-50/40 border border-rose-100 rounded-xl px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all appearance-none"
+                  className="w-full bg-[#190d1d]/65 border border-white/20 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition-all appearance-none"
                 >
                   <option value="" disabled>Select a service</option>
                   {SERVICES.map((s) => (
@@ -219,7 +219,7 @@ export default function Contact() {
                 <textarea
                   required
                   rows={4}
-                  className="w-full bg-rose-50/40 border border-rose-100 rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all resize-none"
+                  className="w-full bg-[#190d1d]/65 border border-white/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/50 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition-all resize-none"
                   placeholder="Tell us about your event, venue, and desired look..."
                 />
               </div>
