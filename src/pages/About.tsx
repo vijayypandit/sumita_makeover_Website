@@ -14,7 +14,7 @@ const SKILLS = [
 ];
 
 const HIGHLIGHTS = [
-  { icon: Award, label: "UK Certified", desc: "London Beauty School" },
+  { icon: Award, label: "UK international London beauty school certified, New Delhi", desc: "London Beauty School" },
   { icon: Star, label: "5+ Years", desc: "Industry Experience" },
   { icon: Heart, label: "300+ Brides", desc: "Made Beautiful" },
   { icon: Globe, label: "3+ Cities", desc: "Delhi · Janakpur · London" },
@@ -24,7 +24,7 @@ export default function About() {
   return (
     <div className="w-full pt-28 pb-24">
       {/* Page Title Banner */}
-      <div className="bg-gradient-to-r from-rose-50 to-pink-50 py-14 mb-16 border-b border-rose-100">
+      <div className="bg-white/10 backdrop-blur-xl border border-white/20 shadow-glow rounded-3xl py-14 mb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-3">The Story</p>
           <h1 className="font-serif text-4xl md:text-5xl text-foreground">About Sumita</h1>
@@ -96,13 +96,13 @@ export default function About() {
 
             <div className="mt-10 grid grid-cols-2 gap-6">
               {HIGHLIGHTS.map(({ icon: Icon, label, desc }) => (
-                <div key={label} className="flex items-center gap-3 bg-rose-50/60 rounded-2xl p-4 border border-rose-100">
-                  <div className="h-10 w-10 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                <div key={label} className="flex items-center gap-3 bg-[#1f1224]/65 rounded-2xl p-4 border border-white/15 shadow-lg shadow-black/30">
+                  <div className="h-10 w-10 bg-primary/20 rounded-xl flex items-center justify-center shrink-0 backdrop-blur-sm">
                     <Icon size={18} className="text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground text-sm">{label}</p>
-                    <p className="text-muted-foreground text-xs mt-0.5">{desc}</p>
+                    <p className="font-semibold text-white text-sm">{label}</p>
+                    <p className="text-white/70 text-xs mt-0.5">{desc}</p>
                   </div>
                 </div>
               ))}
@@ -123,7 +123,7 @@ export default function About() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-3xl p-10 md:p-14 border border-rose-100"
+          className="bg-[#1a0c1f]/65 backdrop-blur-xl rounded-3xl p-10 md:p-14 border border-white/20 shadow-2xl shadow-black/50"
         >
           <div className="text-center mb-10">
             <p className="text-primary text-xs font-bold uppercase tracking-[0.25em] mb-2">Expertise</p>
@@ -137,10 +137,10 @@ export default function About() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.07 }}
-                className="flex items-center gap-3 bg-white rounded-xl p-4 shadow-sm border border-white"
+                className="flex items-center gap-3 rounded-xl p-4 bg-gradient-to-br from-[#2b0920] via-[#4f173c] to-[#7b2d60] border border-[#a2538d] shadow-2xl shadow-fuchsia-900/30 text-white"
               >
-                <div className="h-2 w-2 rounded-full bg-primary shrink-0"></div>
-                <span className="text-sm font-medium text-foreground">{skill}</span>
+                <div className="h-2 w-2 rounded-full bg-accent shrink-0"></div>
+                <span className="text-sm font-medium text-white">{skill}</span>
               </motion.div>
             ))}
           </div>
