@@ -168,8 +168,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <div className="h-0.5 w-12 bg-primary mt-2"></div>
               </Link>
               <p className="text-white/55 text-sm leading-relaxed mb-6 max-w-sm">
-                UK London Beauty School certified professional makeup artist with 5+ years of experience. 
-                Specialising in bridal, party & HD makeup — serving clients across Delhi, Janakpur (Nepal) and beyond.
+                UK London Beauty School certified professional makeup artist with 4+ years of experience. 
+                Specialising in bridal, party & HD makeup — serving clients across Delhi, Patna, Janakpur, Kathmandu and beyond.
               </p>
               <div className="flex gap-3">
                 <a href="#" className="p-2.5 border border-white/10 rounded-full text-white/60 hover:text-primary hover:border-primary/40 transition-colors">
@@ -207,7 +207,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-4 text-sm text-white/55">
                 <li className="flex items-start gap-3">
                   <MapPin size={16} className="text-primary shrink-0 mt-0.5" />
-                  <span>Delhi, India &bull; Janakpur, Nepal<br />Available Worldwide</span>
+                  <span>Delhi, Patna, Janakpur, Kathmandu<br />Available Worldwide</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone size={16} className="text-primary shrink-0" />
@@ -215,7 +215,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail size={16} className="text-primary shrink-0" />
-                  <span>hello@sumitamakeover.com</span>
+                  <span>panditsumita9315@gmail.com</span>
                 </li>
               </ul>
             </div>
