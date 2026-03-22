@@ -65,8 +65,8 @@ export default function Privacy() {
               <h3 className="font-serif text-xl text-foreground mb-3">6. Contact Us</h3>
               <p className="text-sm leading-relaxed">
                 If you have any questions or suggestions about our Privacy Policy, please contact us at{" "}
-                <a href="mailto:hello@sumitamakeover.com" className="text-primary hover:underline">
-                  hello@sumitamakeover.com
+                <a href="mailto:panditsumita9315@gmail.com" className="text-primary hover:underline">
+                  panditsumita9315@gmail.com
                 </a>.
               </p>
             </section>

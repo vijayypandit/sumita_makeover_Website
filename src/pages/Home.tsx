@@ -62,9 +62,9 @@ const GALLERY_PREVIEW = [
 
 const STATS = [
   { icon: Award, value: "UK", label: "International London Beauty School Certified" },
-  { icon: Star, value: "5+", label: "Years Experience" },
-  { icon: Heart, value: "300+", label: "Happy Clients" },
-  { icon: Globe, value: "3+", label: "Cities Served" },
+  { icon: Star, value: "4+", label: "Years Experience" },
+  { icon: Heart, value: "50+", label: "Happy Clients" },
+  { icon: Globe, value: "4+", label: "Cities Served" },
 ];
 
 export default function Home() {
@@ -98,7 +98,7 @@ export default function Home() {
           >
             <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse"></span>
             <span className="text-accent font-semibold text-xs tracking-[0.22em] uppercase">
-              UK international London beauty school Certified • 5+ Years Experience
+              UK international London beauty school Certified • 4+ Years Experience
             </span>
           </motion.div>
 
@@ -118,7 +118,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.35 }}
             className="text-muted-foreground max-w-2xl mx-auto text-base md:text-lg mb-10 leading-relaxed"
           >
-            Professional bridal and party makeup artistry by Sumita — serving Delhi, Janakpur (Nepal) and beyond. Every look crafted with passion and precision.
+            Professional bridal and party makeup artistry by Sumita — serving Delhi, Patna, Janakpur, Kathmandu and beyond. Every look crafted with passion and precision.
           </motion.p>
 
           <motion.div
@@ -234,7 +234,7 @@ export default function Home() {
       </section>
 
       {/* Services / Pricing Section */}
-      <section className="py-24 bg-gradient-to-b from-rose-50/50 to-background">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <SectionHeading title="Services & Pricing" subtitle="What We Offer" />
@@ -329,12 +329,13 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#1a1015] to-[#2a1520]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            className="bg-gradient-to-br from-[#1a1015] to-[#2a1520] rounded-3xl shadow-2xl shadow-primary/20 p-8 md:p-12 text-center"
           >
             <p className="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-3">Ready to Glow?</p>
             <h2 className="font-serif text-3xl md:text-5xl text-white mb-6">

@@ -11,8 +11,8 @@ const SERVICES = [
     inclusions: ["Basic makeup application", "Foundation & blending", "Eye & lip makeup", "Setting spray"],
     exclusions: ["Hair styling not included", "Contact lenses not included"],
     badge: null,
-    color: "from-slate-900 via-slate-800 to-slate-900",
-    border: "border-slate-700",
+    color: "from-[#3d1023] via-[#591a34] to-[#77214a]",
+    border: "border-[#8b3b63]",
   },
   {
     name: "Party Makeup",
@@ -21,8 +21,8 @@ const SERVICES = [
     inclusions: ["Full makeup application", "Hair styling included", "Contact lenses included", "Premium products used"],
     exclusions: [],
     badge: "Popular",
-    color: "from-slate-900 via-fuchsia-700 to-slate-900",
-    border: "border-fuchsia-500",
+    color: "from-rose-600 via-fuchsia-500 to-pink-500",
+    border: "border-pink-300",
   },
   {
     name: "HD Party Makeup",
@@ -31,8 +31,8 @@ const SERVICES = [
     inclusions: ["High Definition makeup", "Hair styling included", "Contact lenses included", "12-Hour long lasting formula", "Skin prep & primer"],
     exclusions: [],
     badge: "Best Value",
-    color: "from-slate-900 via-amber-700 to-slate-900",
-    border: "border-amber-500",
+    color: "from-[#3d1023] via-[#591a34] to-[#77214a]",
+    border: "border-[#8b3b63]",
   },
   {
     name: "Advance Party Makeup",
@@ -41,8 +41,8 @@ const SERVICES = [
     inclusions: ["Premium HD makeup", "Advanced hair styling", "Contact lenses included", "Long-wear formula", "High-end product range", "Full skin prep & contouring"],
     exclusions: [],
     badge: "Premium",
-    color: "from-slate-900 via-rose-700 to-slate-900",
-    border: "border-rose-500",
+    color: "from-[#3d1023] via-[#591a34] to-[#77214a]",
+    border: "border-[#8b3b63]",
   },
 ];
 
@@ -70,7 +70,7 @@ const TERMS = [
 ];
 
 const BADGE_STYLES: Record<string, string> = {
-  Popular: "bg-fuchsia-100 text-fuchsia-700 border border-fuchsia-200",
+  Popular: "bg-amber-400 text-amber-900 border border-amber-500 shadow-lg shadow-amber-500/30",
   "Best Value": "bg-amber-100 text-amber-700 border border-amber-200",
   Premium: "bg-rose-100 text-rose-700 border border-rose-200",
 };
@@ -79,14 +79,17 @@ export default function Services() {
   return (
     <div className="w-full pt-28 pb-24">
       {/* Page Title Banner */}
-      <div className="relative py-14 mb-16">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(138,82,224,0.20),_transparent_55%),_radial-gradient(circle_at_bottom,_rgba(255,136,199,0.18),_transparent_45%)]" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center backdrop-blur-sm bg-slate-900/30 border border-white/20 rounded-3xl shadow-[0_20px_80px_rgba(0,0,0,0.4)]">
-          <p className="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-3">What We Offer</p>
-          <h1 className="font-serif text-4xl md:text-5xl text-white mb-4">Services & Pricing</h1>
-          <p className="text-slate-300 text-base max-w-xl mx-auto">
-            Enhancing your beauty for every occasion.
-          </p>
+      <div className="py-14 mb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#1a0c1f]/65 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl shadow-black/50 text-center">
+            <div className="py-14">
+              <p className="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-3">What We Offer</p>
+              <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Services & Pricing</h1>
+              <p className="text-muted-foreground text-base max-w-xl mx-auto">
+                Enhancing your beauty for every occasion.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -189,11 +192,11 @@ export default function Services() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-[#1a1015] to-[#2a1520] rounded-3xl p-10 md:p-14 text-white"
+          className="bg-slate-900/40 rounded-3xl p-10 md:p-14 border border-white/20 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
         >
           <div className="text-center mb-10">
             <p className="text-primary text-xs font-bold uppercase tracking-[0.25em] mb-2">Important</p>
-            <h2 className="font-serif text-3xl text-white">Booking Terms & Conditions</h2>
+            <h2 className="font-serif text-3xl text-foreground">Booking Terms & Conditions</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {TERMS.map(({ icon: Icon, title, desc }, i) => (
@@ -203,14 +206,14 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="flex gap-4 bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-primary/30 transition-colors"
+                className="flex gap-4 bg-slate-900/30 rounded-2xl p-6 border border-white/10 hover:border-primary/30 transition-colors"
               >
                 <div className="h-10 w-10 bg-primary/20 rounded-xl flex items-center justify-center shrink-0">
                   <Icon size={18} className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-white mb-1">{title}</h3>
-                  <p className="text-white/60 text-sm leading-relaxed">{desc}</p>
+                  <h3 className="font-semibold text-foreground mb-1">{title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{desc}</p>
                 </div>
               </motion.div>
             ))}

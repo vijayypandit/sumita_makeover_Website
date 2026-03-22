@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
-import { Award, Globe, Heart, Star } from "lucide-react";
 
 const SKILLS = [
   "Bridal Makeup (Indian & Western)",
@@ -11,26 +10,16 @@ const SKILLS = [
   "Editorial & Fashion Makeup",
   "Skin Prep & Contouring",
   "Eye & Lip Artistry",
-];
-
-const HIGHLIGHTS = [
-  { icon: Award, label: "UK international London beauty school certified, New Delhi", desc: "London Beauty School" },
-  { icon: Star, label: "5+ Years", desc: "Industry Experience" },
-  { icon: Heart, label: "300+ Brides", desc: "Made Beautiful" },
-  { icon: Globe, label: "3+ Cities", desc: "Delhi · Janakpur · London" },
+  "Nail Art Design",
+  "French Tips & Manicures",
+  "Gel Polish Applications",
+  "Nail Extensions",
+  "Creative Nail Patterns",
 ];
 
 export default function About() {
   return (
     <div className="w-full pt-28 pb-24">
-      {/* Page Title Banner */}
-      <div className="bg-white/10 backdrop-blur-xl border border-white/20 shadow-glow rounded-3xl py-14 mb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-3">The Story</p>
-          <h1 className="font-serif text-4xl md:text-5xl text-foreground">About Sumita</h1>
-        </div>
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Bio Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
@@ -40,7 +29,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-[3/4] overflow-hidden rounded-3xl shadow-2xl relative z-10 bg-secondary/20">
+            <div className="aspect-[4/5] max-h-[520px] overflow-hidden rounded-3xl shadow-2xl relative z-10 bg-secondary/20">
               <img
                 src={`/images/priya-portrait.png`}
                 alt="Sumita Makeover - Professional Makeup Artist"
@@ -73,7 +62,7 @@ export default function About() {
 
             <div className="space-y-5 text-muted-foreground leading-relaxed text-base">
               <p>
-                With over <strong className="text-foreground">5 years of professional experience</strong> in the beauty industry, 
+                With over <strong className="text-foreground">4 years of professional experience</strong> in the beauty industry, 
                 Sumita is a certified makeup artist who has mastered the art of bringing out every client's natural beauty — whether for a traditional Indian wedding, a modern party look, or an editorial shoot.
               </p>
               <p>
@@ -83,7 +72,7 @@ export default function About() {
                 diverse skin tones, textures, and global beauty trends.
               </p>
               <p>
-                Her clientele spans across <strong className="text-foreground">Delhi, Janakpur (Nepal)</strong> and beyond, 
+                Her clientele spans across <strong className="text-foreground">Delhi, Patna, Janakpur, Kathmandu</strong> and beyond, 
                 working with brides and clients from varied cultural backgrounds. She understands the nuances 
                 of Indian traditions, Nepali wedding customs, and modern aesthetics — blending them seamlessly 
                 into looks that are timeless, stunning, and uniquely personal.
@@ -92,20 +81,6 @@ export default function About() {
                 Sumita believes makeup should feel like <em>you</em> — only more radiant. Every brushstroke 
                 is placed with intention, every look crafted with love.
               </p>
-            </div>
-
-            <div className="mt-10 grid grid-cols-2 gap-6">
-              {HIGHLIGHTS.map(({ icon: Icon, label, desc }) => (
-                <div key={label} className="flex items-center gap-3 bg-[#1f1224]/65 rounded-2xl p-4 border border-white/15 shadow-lg shadow-black/30">
-                  <div className="h-10 w-10 bg-primary/20 rounded-xl flex items-center justify-center shrink-0 backdrop-blur-sm">
-                    <Icon size={18} className="text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-white text-sm">{label}</p>
-                    <p className="text-white/70 text-xs mt-0.5">{desc}</p>
-                  </div>
-                </div>
-              ))}
             </div>
 
             <div className="mt-10">
