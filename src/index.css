@@ -29,9 +29,9 @@
   /* Soft light text */
   --foreground: 0 0% 96%;
   
-  /* Warm gold accent */
-  --primary: 42 95% 62%;
-  --primary-foreground: 210 15% 10%;
+  /* Rich maroon/pink accent */
+  --primary: 345 80% 48%;
+  --primary-foreground: 0 0% 100%;
   
   /* Soft stone */
   --secondary: 220 10% 72%;

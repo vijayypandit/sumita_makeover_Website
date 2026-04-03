@@ -114,7 +114,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 z-40 bg-white/98 backdrop-blur-xl pt-20 px-6 md:hidden flex flex-col"
+            className="fixed inset-0 z-40 bg-[#0f1220cc] backdrop-blur-xl pt-20 px-6 md:hidden flex flex-col text-white"
           >
             <nav className="flex flex-col gap-1 mt-8">
               {NAV_LINKS.map((link) => (
@@ -140,13 +140,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 Book Your Appointment
               </Link>
               <div className="flex gap-3 text-primary">
-                <a href="#" className="p-2.5 border border-primary/20 rounded-full hover:bg-rose-50 transition-colors">
+                <a href="https://www.instagram.com/goldenbrush.by.sumita" target="_blank" rel="noopener noreferrer" className="p-2.5 border border-primary/20 rounded-full hover:bg-rose-50 transition-colors">
                   <Instagram size={18} />
                 </a>
-                <a href="#" className="p-2.5 border border-primary/20 rounded-full hover:bg-rose-50 transition-colors">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="p-2.5 border border-primary/20 rounded-full hover:bg-rose-50 transition-colors">
                   <Facebook size={18} />
                 </a>
-                <a href="#" className="p-2.5 border border-primary/20 rounded-full hover:bg-rose-50 transition-colors">
+                <a href="https://www.youtube.com/@Goldenbrush.by.sumita" target="_blank" rel="noopener noreferrer" className="p-2.5 border border-primary/20 rounded-full hover:bg-rose-50 transition-colors">
                   <Youtube size={18} />
                 </a>
               </div>
@@ -159,7 +159,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <main className="flex-1 flex flex-col w-full">{children}</main>
 
       {/* Footer */}
-      <footer className="bg-[#1a1015] text-white pt-16 pb-8">
+      <footer className="bg-gradient-to-br from-[#2a142c] via-[#89224d] to-[#bc286f] text-white pt-16 pb-8 shadow-[inset_0_0_120px_rgba(0,0,0,0.35)] border-t border-white/20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
             <div className="md:col-span-2">
@@ -172,13 +172,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 Specialising in bridal, party & HD makeup — serving clients across Delhi, Patna, Janakpur, Kathmandu and beyond.
               </p>
               <div className="flex gap-3">
-                <a href="#" className="p-2.5 border border-white/10 rounded-full text-white/60 hover:text-primary hover:border-primary/40 transition-colors">
+                <a href="https://www.instagram.com/goldenbrush.by.sumita" target="_blank" rel="noopener noreferrer" className="p-2.5 border border-white/10 rounded-full text-white/60 hover:text-primary hover:border-primary/40 transition-colors">
                   <Instagram size={17} />
                 </a>
-                <a href="#" className="p-2.5 border border-white/10 rounded-full text-white/60 hover:text-primary hover:border-primary/40 transition-colors">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="p-2.5 border border-white/10 rounded-full text-white/60 hover:text-primary hover:border-primary/40 transition-colors">
                   <Facebook size={17} />
                 </a>
-                <a href="#" className="p-2.5 border border-white/10 rounded-full text-white/60 hover:text-primary hover:border-primary/40 transition-colors">
+                <a href="https://www.youtube.com/@Goldenbrush.by.sumita" target="_blank" rel="noopener noreferrer" className="p-2.5 border border-white/10 rounded-full text-white/60 hover:text-primary hover:border-primary/40 transition-colors">
                   <Youtube size={17} />
                 </a>
               </div>

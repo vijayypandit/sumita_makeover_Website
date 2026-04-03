@@ -251,7 +251,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`relative flex flex-col rounded-2xl p-6 border transition-all duration-300 hover:shadow-2xl ${
+                className={`relative flex flex-col rounded-3xl p-6 border transition-all duration-300 shadow-lg hover:shadow-2xl ${
                   svc.highlight
                     ? "bg-gradient-to-br from-rose-600 via-fuchsia-500 to-pink-500 text-white border-pink-300 shadow-pink-500/40"
                     : "bg-gradient-to-br from-[#3d1023] via-[#591a34] to-[#77214a] text-white border-[#8b3b63] hover:border-[#c7629b]"
