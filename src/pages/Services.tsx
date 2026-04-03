@@ -103,7 +103,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className={`relative flex flex-col rounded-3xl bg-gradient-to-br ${svc.color} border ${svc.border} p-7 shadow-sm hover:shadow-xl transition-shadow duration-300`}
+              className={`relative flex flex-col rounded-3xl bg-gradient-to-br ${svc.color} border ${svc.border} p-7 shadow-lg hover:shadow-2xl transition-shadow duration-300`}
             >
               {svc.badge && (
                 <span className={`absolute top-4 right-4 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full ${BADGE_STYLES[svc.badge]}`}>
@@ -158,7 +158,7 @@ export default function Services() {
           className="mb-20"
         >
           <SectionHeading title="Quick Comparison" subtitle="At a Glance" className="mb-10" />
-          <div className="overflow-x-auto rounded-2xl border border-white/20 shadow-[0_20px_60px_rgba(0,0,0,0.35)] bg-slate-900/40">
+          <div className="overflow-x-auto rounded-2xl border border-white/20 shadow-[0_20px_60px_rgba(0,0,0,0.35)] bg-gradient-to-br from-slate-900/90 via-slate-800/80 to-slate-700/75">
             <table className="w-full text-sm">
               <thead>
                 <tr className="bg-gradient-to-r from-slate-800/70 to-slate-700/60">
